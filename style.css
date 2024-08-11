@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #f4f4fc;
+    width: auto;
+    height: 100vh;
+}
+
+.logo {
+    width: 128px;
+    height: 48px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+main {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1{
+    width: 920px;
+    height: 90%;
+}
+.div_ingresa_texto {
+    position: absolute;
+    left: 240px;
+    top: 40px;
+    width: 680px;
+    height: 500px;
+}
+
+.txt_area_ingresa_texto {
+    width: 680px;
+    height: 100%;
+    border: none;
+    background-color: #f4f4fc;
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.txt_area_ingresa_texto::placeholder {
+    color: #0A3871;
+}
+
+.div_warning {
+    position: absolute;
+    top: 723px;
+    left: 240px;
+    display: flex;
+    color: #495057;
+}
+
+.div_botones {
+    position: absolute;
+    top: 757px;
+    left: 240px;
+    height: 67px;
+
+}
+
+.btn_encriptar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    border: none;
+
+}
+
+.btn_desencriptar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #d8dfe8;
+    color: #0A3871;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    border: 1px solid #0A3871;
+
+}
+
+.section2 {
+
+    width: 520px;
+    height: 90%;
+}
+
+.div_contenedor_encriptado {
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 944px;
+    left: 80px;
+    right: 40px;
+    bottom: 40px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 8px 24px 32px -8px rgba(0, 0, 0, 0.5);
+}
+
+.div_imagen_esperando {
+    position: absolute;
+    left: 32px;
+    top: 243px;
+    box-sizing: border-box;
+    
+
+}
+
+.div_texto_munieco {
+    position: absolute;
+    box-sizing: border-box;
+    top: 579px;
+    left:32px;
+}
+
+.div_texto_munieco h3 {
+    font-size: 24px;
+    font-weight: 700px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #343A40;
+}
+
+.div_texto_munieco p {
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #495057;
+    padding: 16px;
+}
+
+.div_texto_encriptado {
+    position: absolute;
+    width: 336px;
+    height: 600px;
+    box-sizing: border-box;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.res_texto_encriptado{
+    width: 336px;
+    height: 600px;
+    font-family: 'Inter', sans-serif;
+    color: #495047;
+    font-size: 24px;
+    border: none;
+    background-color: transparent;
+}
+   
+
+.div_btn_copiar {
+    position: absolute;
+    bottom: 400px;
+    top: 700px;
+    padding-left: 32px;
+}
+
+.btn_copiar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    position: relative;
+    top: 100px;
+    visibility:hidden;
+}
+
+
+/*TABLET*/
+@media (max-width: 960px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .section1{
+        width: 768px;
+
+    }
+    .logo{
+     
+        top:73.42px ;
+        left: 40px;
+
+    }
+    .div_ingresa_texto{
+        top: 116px;
+        left: 40px;
+    }
+    
+    .div_warning {
+        top: 836px;
+        left: 40px;
+    }
+    .div_botones{
+        top: 870px;
+        left: 40px;
+    }
+
+    .section2{
+        margin-top: 1001px;
+        width: 768px;
+    }
+    .div_contenedor_encriptado {
+        width: 688px;
+        height: 343px;
+        top: 24px;
+        left: 40px;
+        right: 40px;
+        bottom: 40px;
+    }
+    .div_imagen_esperando {
+       visibility: hidden;
+
+    }
+    .div_texto_munieco {
+        top: 32px;
+        left: 40px;
+        width: 624px;
+        height: 69px;
+    }
+    .div_texto_encriptado{
+        height: 200px;
+        width: 620px;
+
+    }
+    .res_texto_encriptado{
+        height: 200px;
+        width: 620px;
+    }
+    
+
+    .div_btn_copiar {
+        width: 624px;  
+        top: 143px;
+    
+    }
+    
+    .btn_copiar {
+        width: 624px;
+        bottom: 32px; 
+        visibility:hidden;  
+    }  
+    
+    .footer{   
+        margin-top: 1400px;
+        height: 35px;
+        width: 100%;
+    }
+}
+
+/*CELULAR*/
+
+@media (max-width: 480px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .section1{
+        width: 375px;
+    }
+    .logo{
+        padding-top: 15px;
+        padding-left: 5px;
+    }
+    .div_ingresa_texto{
+        top: 152px;
+        left: 16px;
+        width: 343px;
+        height: 280px;
+    }
+    .txt_area_ingresa_texto {
+        width: 343px;
+        height: 280px;
+    }
+    
+    .div_warning {
+        top: 451px;
+        left: 16px;
+    }
+    .div_botones{
+        width: 343px;
+        height: 158px;
+        top: 485px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .section2{
+        margin-top: 707px;
+        width: 375px;
+    }
+    .div_contenedor_encriptado {
+        width: 343px;
+        height: 595px;
+        top: 0px;
+        left: 16px;
+        right: 16px;
+        bottom: 40px;
+    }
+   
+    .div_imagen_esperando {
+       visibility:hidden;
+    
+    }
+    .div_texto_munieco {
+        top: 32px;
+        left: 32px;
+        width: 263px;
+        height: 122px;
+    }
+    .div_texto_encriptado{
+        height: 432px;
+        width: 279px;
+    }
+    .res_texto_encriptado{
+        height: 432px;
+        width: 279px;
+    }
+
+    .div_btn_copiar {
+        top: 400px;
+        width: 279px;
+        padding-left: 24px;
+    }
+    
+    .btn_copiar {
+        width: 279px;
+        visibility:hidden;    
+    } 
+    .footer{   
+        margin-top: 1050px;
+        height: 35px;
+        width: 100%;
+    }  
+}
